@@ -1,0 +1,8 @@
+<% layout ('layouts/boilerplate') %> 
+<h3>List of name of states</h3>
+<ul>
+    <% for(let state of states) { %>
+        <li><%= state.name[0].toUpperCase() + state.name.slice(1) %></li>
+        <% } %> 
+</ul>
+<a class="btn btn-primary" href="/states/new">Add New State</a>

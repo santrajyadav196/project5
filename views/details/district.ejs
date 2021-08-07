@@ -1,0 +1,8 @@
+<% layout ('layouts/boilerplate') %> 
+<h3>List of name of districts</h3>
+<ul>
+    <% for(let district of districts) { %>
+        <li><%= district.name[0].toUpperCase() + district.name.slice(1) %></li>
+        <% } %> 
+</ul>
+<a class="btn btn-primary" href="/districts/new">Add New</a>

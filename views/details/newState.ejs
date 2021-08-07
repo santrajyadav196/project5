@@ -1,0 +1,18 @@
+<% layout ('layouts/boilerplate') %> 
+     <div class="row">
+       <div class="container">
+           <div class="col-6 offset-3">
+           <h3 class="text-center">Add New State</h3>
+          <form action="/states" method="POST">
+         <div class='mb-3'>
+        <label class='form-label' for="name">Name Of State:</label>
+        <input class='form-control' type="text" name="name" id="name" placeholder="state name">
+        </div>
+        <div class="mb-3">
+        <button class="btn btn-success">Submit</button>
+        <a class="btn btn-primary" href="/states">Back To All</a>
+        </div>
+    </form>
+       </div>
+       </div>
+   </div>

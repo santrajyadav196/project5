@@ -1,0 +1,19 @@
+<% layout ('layouts/boilerplate') %> 
+
+     <div class="row">
+       <div class="container">
+           <div class="col-6 offset-3">
+           <h3 class="text-center">Add New Child</h3>
+          <form action="/children" method="POST">
+         <div class='mb-3'>
+        <label class='form-label' for="name">Name Of Child:</label>
+        <input class='form-control' type="text" name="name" id="name" placeholder="Child name">
+        </div>
+        <div class="mb-3">
+        <button class="btn btn-success">Submit</button>
+        <a class="btn btn-info d-block-inline" href="/children">Back To All</a>
+        </div>
+    </form>
+       </div>
+       </div>
+   </div>

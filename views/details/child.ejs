@@ -1,0 +1,8 @@
+<% layout ('layouts/boilerplate') %> 
+<h3>List of name of children</h3>
+<ul>
+    <% for(let child of children) { %>
+        <li><%= child.name[0].toUpperCase() + child.name.slice(1) %></li>
+        <% } %> 
+</ul>
+<a class="btn btn-primary" href="/children/new">Add New</a>
